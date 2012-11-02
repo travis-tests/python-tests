@@ -1,0 +1,13 @@
+language: "python"
+python:
+  - "3.2"
+  - "3.3"
+before_script:
+  - "make setup"
+install:
+  - "make install"
+script:
+  - "make travis"
+matrix:
+  allow_failures:
+    - python: "3.2"
