@@ -2,7 +2,7 @@ language: "python"
 python:
   - "3.2"
   - "3.3"
-before_script:
+before_install:
   - "make setup"
 install:
   - "make install"
