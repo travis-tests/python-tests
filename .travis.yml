@@ -4,6 +4,8 @@ python:
   - "3.3"
 before_install:
   - "make setup"
+  - "source ~/virtualenv/python3.3/bin/activate"
+  - "python --version"
 install:
   - "make install"
 script:
